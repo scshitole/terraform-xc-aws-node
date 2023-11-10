@@ -13,3 +13,8 @@ terraform {
     }
 }
 
+provider "volterra" {
+  api_p12_file = var.cred
+  url      = var.url
+}
+

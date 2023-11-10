@@ -2,10 +2,16 @@ variable "environment" {
 	default		= "cloud-scs"
 	description = "Environment Name"
 }
+variable "cred" {}
+variable "url" {}
 variable "myip" {
 	type = string
 	default = "73.254.158.216/32"
   
+}
+
+variable "ssh_key" {
+       default = "/var/tmp/newscs.pem"
 }
 
 variable "api_url" {

@@ -41,6 +41,7 @@ resource "volterra_aws_vpc_site" "aws_vpc_site" {
   lifecycle {
     ignore_changes = [labels]
   }
+ ssh_key = var.ssh_key
 }
 
 resource "volterra_cloud_site_labels" "labels" {
